@@ -47,8 +47,7 @@ int main() {
 			mix[i + strL] = substr[i];
 		}
 		for (int j = 0; j < (strL - maxN - 1); j++) {
-			for (int i = maxN + 1; i <(strL + substrL); i++) {
-				if (mix[i + 1] == '\0') break;
+			for (int i = maxN + 1; mix[i+1]!='\0'; i++) {
 				int temp = mix[i];
 				mix[i] = mix[i + 1];
 				mix[i + 1] = temp;
