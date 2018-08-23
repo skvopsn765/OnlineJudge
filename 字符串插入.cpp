@@ -19,10 +19,9 @@
 using namespace std;
 
 int main() {
-	char str[100] = { '\0' };
-	char substr[30] = { '\0' };
-	char mix[130] = { '\0' };
-	int max = 0;
+	char str[11] = { '\0' };
+	char substr[4] = { '\0' };
+	char mix[14] = { '\0' };
 	int maxN = 0;
 	int strL = 0;
 	int substrL = 0;
@@ -31,7 +30,6 @@ int main() {
 		max = 0;
 		for (int i = 0; str[i]!='\0'; i++) {
 			if (str[i] > max) {
-				max = str[i];
 				maxN = i;
 			}
 		}
