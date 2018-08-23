@@ -28,8 +28,8 @@ int main() {
 	int substrL = 0;
 	while (cin >> str >> substr) {
 		//找出最大值
-		max = str[0];
-		for (int i = 0; i < 10; i++) {
+		max = 0;
+		for (int i = 0; str[i]!='\0'; i++) {
 			if (str[i] > max) {
 				max = str[i];
 				maxN = i;
