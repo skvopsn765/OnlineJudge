@@ -27,7 +27,7 @@ int main() {
 	int substrL = 0;
 	while (cin >> str >> substr) {
 		//找出最大值
-		max = 0;
+		int max = 0;
 		for (int i = 0; str[i]!='\0'; i++) {
 			if (str[i] > max) {
 				maxN = i;
