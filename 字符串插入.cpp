@@ -51,6 +51,7 @@ int main() {
 		//最大字母後的字母往後移
 		for (int j = 0; j < (strL - maxN - 1); j++) {
 			for (int i = maxN + 1; mix[i + 1] != '\0'; i++) {
+
 				int temp = mix[i];
 				mix[i] = mix[i + 1];
 				mix[i + 1] = temp;
